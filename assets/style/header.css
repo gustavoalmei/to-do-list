@@ -1,0 +1,71 @@
+.container__app header{
+    margin-bottom: 1rem;
+}
+
+#novoItem{
+    text-align: center;
+    position: relative;
+}
+
+#novoItem label{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Input */
+#novoItem div{
+    display: flex;
+    gap: 5px;
+}
+
+#value{
+    width: 100%;
+    flex-shrink: 1;
+}
+
+#value::placeholder{
+    color: rgba(0, 0, 0, .3);
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 10px;
+}
+
+#submit{
+    width: calc(100% - 80%);
+    background-color: #fff;
+    font-weight: 700;
+
+    cursor: pointer;
+    transition: background-color 250ms linear;
+}
+
+#submit:hover{
+    color: #fff;
+    background-color: rgba(163, 131, 91, 1);
+    transition: background-color 250ms linear;
+}
+
+.input{
+    border: 1px solid transparent;
+    padding: .8rem .5rem;
+    border-radius: .25rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:535px) {
+    #novoItem div{
+        flex-direction: column;
+    }
+
+    #value{
+        width: initial;
+    }
+    
+    #submit{
+        width: 100%;
+    }
+}

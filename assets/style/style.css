@@ -1,0 +1,34 @@
+:root{
+    --text-color: #181818;
+    --gray: #1E1E1E;
+    --gray-ligth: #323333;
+    --border: #9c9c9cab;
+    --remove: #FE0000;
+}
+
+html, body{
+    height: 100vh;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+}
+
+.background{
+    width: 50%;
+    height: 100%;
+
+    background-image: url("../img/backgroundIMG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:1024px) {
+    .background{
+        width: 0;
+    }
+}
